@@ -20,10 +20,11 @@ print(sorted_list)
 
 # 4*
 numer_of_words = {}
-for itr in new_str1.split():
+for itr in new_str1.lower().split():
     numer_of_words[f'{itr}'] = 0
+
 for itr in numer_of_words.keys():
-    count_words = str1.count(itr)
+    count_words = str1.lower().count(itr)
     numer_of_words[f'{itr}'] = count_words
 
 print('Number of words:', numer_of_words)
