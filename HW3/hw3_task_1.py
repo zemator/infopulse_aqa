@@ -1,5 +1,4 @@
-# user`s string is "This is my string."
-USER_STR = "This is my string."
+# user_string = "This is my string."
 user_string = input('Enter a string: ')
 print(
     "line #1: " + user_string[2], 
