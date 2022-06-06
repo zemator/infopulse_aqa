@@ -9,6 +9,9 @@ class Employee(Person):
         self.experience = self._exp_not_negative(experience)
         self.salary = self._salary_not_negative(salary)
 
+    def __str__(self):
+        return f'This is Employee class.'
+
     def _exp_not_negative(self, experience):
         if experience <= -1:
             raise ValueError('Salary can not be negative.')

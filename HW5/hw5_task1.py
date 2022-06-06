@@ -11,6 +11,9 @@ class Person:
         self.full_name = self._is_valid_full_name(full_name)
         self.birthyear = self._valid_birthyear(birthyear)
 
+    def __str__(self):
+        return f'This is Person class.'
+
     def _is_valid_full_name(self, full_name):
         if len(full_name.split()) != 2:
             raise ValueError('Should be name and sirname.')
