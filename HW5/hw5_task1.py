@@ -14,6 +14,7 @@ class Person:
     def __str__(self):
         return f'This is Person class.'
 
+
     def _is_valid_full_name(self, full_name):
         if len(full_name.split()) != 2:
             raise ValueError('Should be name and sirname.')
@@ -39,3 +40,4 @@ class Person:
             return f'{self.full_name} will be born in {self.birthyear - year} years.'
         if year > self.birthyear:
             return f'{self.full_name} is {year - self.birthyear} years old'
+
